@@ -60,7 +60,9 @@ class PegawaiController extends BaseController
         $data = [
             'id' => $id,
             'nama_pegawai' => $this->request->getPost('nama_pegawai'),
-            'deskripsi_pegawai' => $this->request->getPost('deskripsi_pegawai'),
+            'alamat' => $this->request->getPost('alamat'),
+            'telepon' => $this->request->getPost('telepon'),
+            'jabatan_id' => $this->request->getPost('jabatan_id'),
 
         ];
         $this->modelPegawai->save($data);

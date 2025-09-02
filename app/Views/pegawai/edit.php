@@ -25,7 +25,7 @@
         <label for="" class="form-label">Jabatan</label>
         <select name="jabatan_id" id="" class="form_control">
             <?php foreach ($jabatan as $j) { ?>
-                <option value="<?= $j->id; ?>"><?= $j->nama_jabatan; ?></option>
+                <option value="<?= $j->id; ?>" <?= ($j->id == $pegawai->jabatan_id) ? 'selected' : '';?>><?= $j->nama_jabatan; ?></option>
             <?php } ?>
         </select>
        </div>
